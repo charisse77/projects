@@ -5,24 +5,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>The Cooking Collaborate </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script type="application/javascript" src="app/wdv321.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
+<script type="application/javascript" src="app/display-receipe.js"></script>
+<script type="application/javascript" src="app/create-recipe.js"></script>
 <style>
     .container{
         border: thin solid black; 
         width: 1050px; 
         height: 1050px
     }
+
+    .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+    }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container-card {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
 </style>
 </head>
 
 <body>
 <div class="container">
 
+    <div class="card" style="width:300px">
+        <img src="..." alt="Image" width="100%">
+        <div class="container-card">
+          <h4 class="recipeName"><b>Demo Recipe</b></h4>
+          <p class="servingSize">Serving Size:</p>
+          <p class="recipeDifficulty">Difficulty:</p>
+          <p class="recipePrepTime">Preparation Time:</p>
+           <button>Show Full Recipe</button>
+          <div class="recipeIngredients">Ingredients</div>
+          <div class="recipeInstructions">Instructions</div>
+        </div>
+      </div> 
+
+      <!-- Dynamically Build Recipe Card -->
+
+      <div class="card">
+
+      </div>
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
