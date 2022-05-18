@@ -1,0 +1,173 @@
+// S and L Home Services 
+
+$darkBlue: #03045E;
+$deepBlue: #0077B6;
+$mediumBlue: #00B4D8;
+$lightBlue: #90E0EF;
+$brightBlue: #CAF0F8;
+$textColor: #333;
+$pFont: Roboto, Helvetica, sans-serif;
+$hFont: Patua One, Arial, sans-serif; 
+$small: 0.5rem; 
+$med: 1rem; 
+
+.container {
+    border: thin solid lightgray;
+
+}
+
+@mixin fonts{
+    font: {
+        size: $med; 
+        family: $pFont; 
+    };
+}
+
+p{
+    @include fonts;
+}
+
+
+div[class$="bg-light"] {
+  background-image: url("../images/kitchen.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+  height: 50em;
+  margin-top: -1.2em;
+}
+
+
+footer {
+    background-color: $deepBlue;
+    color:white;
+    font-weight: bold;
+    margin: -0.8em;
+
+}
+
+div[class^="ms-5"] {
+    width:40em;
+}
+    
+
+h2 + h3 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.formatText {
+    font-size: 120%;
+}
+
+#carouselExampleDark {
+    width: 30%;
+}
+
+div[class^="card-body"] {
+    margin: 0.7em;
+} 
+
+nav {
+    margin-left: -0.7em;
+    margin-right: -0.8em;
+}
+
+header {
+    margin-left: -0.7em;
+    margin-right: -0.8em;
+    margin-top: -2.0em;
+}
+
+button,h6 {
+    font-family: $pFont;
+}
+
+input[class^="btn"] {
+    font-family: $pFont;
+}
+
+h1, h2, h3 {
+    font-family: $hFont;
+}
+
+footer > div:last-of-type {
+    background-color: $brightBlue;
+    color: #333;
+}
+
+
+footer > div:first-of-type {
+   background-color: $mediumBlue;
+}
+
+img {
+    border: 3px solid #333;
+    border-radius: 1.0em; 
+}
+
+.card img{
+	border:none;
+	border-radius: 0; 
+}
+
+.divHeight {
+    height: 30em;
+}
+
+.divHeight2 {
+    height: 20em;
+}
+
+.background1 {
+background-image: url("../images/staircase.png");
+background-repeat: no-repeat;
+background-size:cover;
+height: 250px;
+width:100%;
+margin-top: -1.3em;
+    
+}
+
+.background2 {
+background-image: url("../images/renovation2.png");
+background-repeat: no-repeat;
+background-size:cover;
+height: 250px;
+width:100%;
+margin-top: -1.3em;
+}
+
+.btn {
+    background-color: $darkBlue; 
+    background-position: center;
+    transition: background 0.8s; 
+    opacity: 1;
+    border: none;
+    box-shadow: 0em 0em 1.0em rgba(0,0,0,0.5);
+}
+
+.btn:active {
+    background-color: $deepBlue;
+    background-size: 100%; 
+    transition: background 0s;
+    opacity: 0.2;
+    box-shadow: 0em 0em 1.0em rgba(0,0,0,0.5);
+}
+
+div > section h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
+h1 + p {
+    text-shadow: 2px 2px 5px black; 
+}
+
+
+@media only screen and (max-width: 375px) {
+  #carouselExampleDark {
+    width: 100%;
+
+}
+
+}
