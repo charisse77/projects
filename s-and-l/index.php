@@ -56,7 +56,7 @@
       <section class="py-5">
         <h1 class="display-5 fw-bold"> Reimagine Your Home with S &amp; L </h1>
         <p class="col-md-8 fs-4">The average kitchen remodel can cost you up to $34,000. Request a free estimate today and learn how S &amp; L  will save you thousands! </p>
-       <a href="contact.html"> <button class="btn btn-primary btn-lg" type="button">Request an Estimate</button></a>
+       <a href="contact.php"> <button class="btn btn-primary btn-lg" type="button">Request an Estimate</button></a>
           
       </section>
     </div>
