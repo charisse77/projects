@@ -3,7 +3,7 @@
 try{
 	include 'dbConnect.php';
 	
-	$sql = "SELECT service_name, service_description, service_image FROM services ORDER BY service_name DESC";
+	$sql = "SELECT serviceName, serviceDescription, serviceImg FROM services ORDER BY serviceName DESC";
 	$stmt = $conn->prepare($sql); //prepare statment
 	$stmt->execute(); 
 	//$result = $stmt->fetch(PDO::FETCH_ASSOC); //$result is an ARRAY
@@ -89,10 +89,10 @@ try{
 	?>
 
 <div class="card mx-auto mt-4" style="width: 18rem;">
-  <img class="card-img-top mt-2" src="../Bootstrap Portolio/images/<?php echo $result['service_image'] ?>" alt="Card image cap">
+  <img class="card-img-top mt-2" src="images/<?php echo $result['serviceImg'] ?>" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $result['service_name']; ?></h5>
-    <p class="card-text"><?php echo $result['service_description']; ?></p>
+    <h5 class="card-title"><?php echo $result['serviceName']; ?></h5>
+    <p class="card-text"><?php echo $result['serviceDescription']; ?></p>
   </div>
 </div>
 
