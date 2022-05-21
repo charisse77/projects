@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cats&amp;co | online cat store</title>
+<!-- EXTERNAL SHEETS -->
+<link href="css/wdv351-style.css" rel="stylesheet" type="text/css">
+<!-- END EXTERNAL SHEETS -->
+	
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet"> 
+<!-- END FONT -->
+	
+<script src="https://kit.fontawesome.com/74880bd41f.js" crossorigin="anonymous"></script>
+<script src="js/wdv351.js"></script>
+
+</head>
+
+<body onload="pageLoad()">
+
+<div id="container">
+  <nav class="flex-nav">
+    <ul>
+      <strong><li><a href ="index.html">Cats&amp;Co</a></li></strong>
+      <li><a href ="about.html">about</a></li>
+      <li><a href ="shop.html"> shop </a></li>
+      <li><a href="contact.html">connect</a></li>
+      </ul>    
+	     <!--VIEW CART BUTTON--> 	
+    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <button><i class="fas fa-shopping-cart" style="color:white; font-size: 25px;"></i></button>
+      <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    <!-- END VIEW CART BUTTON --> 
+  </nav>
+	
+<h1>shop.</h1>
+<!-- BEGIN TOYS-->
+<h1>toys</h1>
+<div class="flex-products">
+	<div class="card">
+		<img src="images/glow1.png" alt="3 Pack Glow-in-the-Dark Wiggly Ball"> 
+      <div class="card-content">
+			<h2 class="card-title">3 Pack Glow-in-the-Dark<br> Wiggly Ball </h2>
+			<p class="card-body">
+			The Glow in the Dark Bouncy Ball Cat Toy is an innovative, handmade cat toy designed by veterinarians with your cat in mind. <br> $10.99	
+			</p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="4ZG8SNUBWCX3Q">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				
+
+		
+		
+		
+		</div>
+		
+		  
+	</div>
+	
+	<div class="card">
+		<img src="images/wand1.png" alt="Telescoping Wiggly Worm Cat Teaser Wand"> 
+      <div class="card-content">
+			<h2 class="card-title">Wiggly Worm <br>Cat Teaser Wand</h2>
+			<p class="card-body">
+			The telescoping Wiggly Worm Cat Teaser Wand mimics "live" prey with its realistic, wiggly movements. <br> $9.99
+			</p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="9LWNKLWRVSJJN">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				
+		
+	
+		</div>
+	</div>
+	<div class="card">
+			<img src="images/caterpillars1.png" alt="Nightcrawler Catnip Kicker Toy"> 
+		  <div class="card-content">
+				<h2 class="card-title">Nightcrawler Catnip <br> Kicker Toy</h2>
+				<p class="card-body">
+				Each catnip kicker toy measures approximately 17" long and is stuffed with farm-fresh catnip sourced here in the USA.	<br> $10.99
+				</p>
+			  <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="L6YBR89H6L7KJ">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+			
+		
+
+			</div>
+		</div>
+	
+	<div class="card">
+			<img src="images/squirrels1.png" alt="Squirrel Catnip Kicker Toy"> 
+		  <div class="card-content">
+				<h2 class="card-title">'Squirrel' Catnip <br> Kicker Toy</h2>
+				<p class="card-body">
+				These 'Squirrel' Catnip toys are designed for a rough-and-tumble cat who loves to bite, kick, and chew on their toys. <br> $7.99
+				</p>
+			  <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="2WGB2V94FN9TS">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+			</div>
+		</div>
+</div>
+<!-- END TOYS -->
+	
+<!-- BEGIN FOOD-->
+	<h1>food</h1>
+	<div class="flex-products">
+	  <div class="card">
+	    <img src="images/dry1a.png" alt="ORIJEN Cat and Kitten Food"> 
+	    <div class="card-content">
+	      <h2 class="card-title">ORIJEN Cat &amp; Kitten <br>Premium Cat Food, 6lbs</h2>
+	      <p class="card-body">
+	        ORIGEN is made with the most nutrient-dense, succulent parts of the prey to deliver the nutrition cats need. <br> $12.99
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="PBQ3Z8H33K622">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+	     
+	      </div>
+      </div>
+	  
+	  <div class="card">
+	    <img src="images/can1.png" alt="Instinct Original Grain-Free Can"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Instinct Original Grain-Free <br>Pate Real Chicken <br> Recipe, 6 cans</h2>
+	      <p class="card-body">
+	        High animal protein, grain-free recipe guided by our belief in raw, Instinct Original Real Chicken Recipe unlocks your cat's potential to thrive. <br> $12.99
+	        </p>
+		  <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="7NU5V5GGB9HD6">
+		<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+		<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+
+	      
+	      </div>
+      </div>
+	  <div class="card">
+	    <img src="images/halo1.png" alt="Bag of Halo Adult Holistic Dry Cat Food"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Halo Adult Holistic <br> Wild Salmon <br> Recipe Dry Cat Food, 6 lbs.</h2>
+	      <p class="card-body">
+	        Halo stands by the ingredients in our food and says NO to factory farming. We choose ustainably sourced MSC certified fish, non-GMO vegetables.	<br> $12.99
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="9GZBWP5B869WG">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+			
+	      	
+	      </div>
+	    </div>
+    </div>
+	<!-- END FOOD -->
+	
+<!-- BEGIN FURNITURE-->
+	<h1>furniture</h1>
+	<div class="flex-products">
+	  <div class="card">
+	    <img src="images/banana1.png" alt="Banana Cat Bed"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Banana Cat Bed <br> <span style="color: lightcoral;">SALE </span></h2>
+	      <p class="card-body">
+	        The Banana Cat Bed is versatile in its “sleepability” and can accommodate any feline sleeping position. Thanks to its 29” length, this cute cat bed is ideal for cats that prefer to stretch out during their catnaps. <br>  <span style="text-decoration-line: line-through; -webkit-text-decoration-line: line-through"><em>$29.99</em></span> $20.99	
+	        </p>
+			
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="8CL69J98CLF2L">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+	      
+	      </div>
+      </div>
+	  
+	  <div class="card">
+	    <img src="images/tree2a.png" alt="Mega Perch Cat Tree"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Mega Perch Cat Tree</h2>
+	      <p class="card-body">
+	        With four sisal-carpeted platforms and standing at 5 feet tall, this minimalist modern cat tree is designed to provide your cat with plenty of vertical climbing space and scratching spots. 	
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="RGGC8JK2Y58AW">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+	      	
+	      </div>
+      </div>
+	  <div class="card">
+	    <img src="images/tart-bed1.png" alt="Fruit Tart Cat Bed"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Fruit Tart Cat Bed</h2>
+	      <p class="card-body">
+	         Your cat can curl up in the pastry "shell" amidst the delightful assortment of stuffed fruit cushions, including a colorful kiwi, strawberry, two blueberries, and a tasty tangerine!
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="AH4FX373HMHJE">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+	      
+	      </div>
+	    </div>
+    </div>
+
+<!-- END FURNITURE -->
+
+<!-- BEGIN APPAREL-->
+<h1>apparel</h1>
+<div class="flex-products">
+	<div class="card">
+	    <img src="images/human-shirt1.png" alt="paws t-shirt"> 
+	    <div class="card-content">
+	      <h2 class="card-title">PAWS Unisex T-shirt <br> <span style="color: lightcoral;">SALE </span></h2>
+	      <p class="card-body">
+	         This comfy cat pun t-shirt features the iconic JAWS poster, with a fiercely fluffy kitty swapped out for a shark.  <br>  <span style="text-decoration-line: line-through; -webkit-text-decoration-line: line-through"><em>$29.99</em></span> $10.99	
+	        </p>
+			
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="RHQBE95TJBP8S">
+			<table>
+			<tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+				<option value="S">S $10.99 USD</option>
+				<option value="M">M $10.99 USD</option>
+				<option value="L">L $10.99 USD</option>
+				<option value="XL">XL $10.99 USD</option>
+				<option value="2XL">2XL $10.99 USD</option>
+				<option value="3XL">3XL $10.99 USD</option>
+				<option value="4XL">4XL $10.99 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+	      </div>
+      </div>
+	
+	<div class="card">
+		<img src="images/blouse.png" alt="Classy Cat Collared Blouse"> 
+      <div class="card-content">
+			<h2 class="card-title">Classy Cat Collared <br> Blouse</h2>
+			<p class="card-body">
+			Our classy, timeless button-up blouse, complete with its embroidered cat collar is the purrfect statement-making piece to dress up any ensemble. <br> $24.99
+			</p>
+		  	<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="SJSNV5QQSWVQQ">
+			<table>
+			<tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+				<option value="S">S $24.99 USD</option>
+				<option value="M">M $24.99 USD</option>
+				<option value="L">L $24.99 USD</option>
+				<option value="XL">XL $24.99 USD</option>
+				<option value="2XL">2XL $24.99 USD</option>
+				<option value="3XL">3XL $24.99 USD</option>
+				<option value="4XL">4XL $24.99 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+		</div>
+	</div>
+	<div class="card">
+			<img src="images/earth2.png" alt="Save the Earth Crewneck Sweatshirt"> 
+		  <div class="card-content">
+				<h2 class="card-title">Save the Earth Crewneck <br> Sweatshirt</h2>
+				<p class="card-body">
+				For the cat-loving conservationist, the Save the Earth Crewneck Sweatshirt is the ideal way to speak your mind without having to say a word! <br> $30.99	
+				</p>
+			    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="CGYFNKYP3EZYC">
+			<table>
+			<tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+				<option value="S">S $30.99 USD</option>
+				<option value="M">M $30.99 USD</option>
+				<option value="L">L $30.99 USD</option>
+				<option value="XL">XL $30.99 USD</option>
+				<option value="2XL">2XL $30.99 USD</option>
+				<option value="3XL">3XL $30.99 USD</option>
+				<option value="4XL">4XL $30.99 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+			</div>
+		</div>
+</div>
+<!-- END APPAREL -->
+	
+<!-- BEGIN HOME/DECOR-->
+	<h1>home and decor</h1>
+	<div class="flex-products">
+	  <div class="card">
+	    <img src="images/nerd1.png" alt="Nerd Meow Toss Pillow Cover"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Nerd Meow Toss <br> Pillow Cover</h2>
+	      <p class="card-body">
+	        This fun, durable pillow is fashioned from a textured, cotton-linen mix fabric. It will slide comfortable over any 16 or 17 inch, square pillow. <br> $15.99
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="SDKYTMMNMFLDG">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+	      </div>
+      </div>
+	  
+	  <div class="card">
+	    <img src="images/blanket1.png" alt="More Naps Sherpa Blanket"> 
+	    <div class="card-content">
+	      <h2 class="card-title">More Naps <br>Sherpa Blanket</h2>
+	      <p class="card-body">
+	       This blanket is 50" x 60" and made from 100% Polyester, and the reverse is lined with soft-to-the-touch, vegan Sherpa fleece for extra cozy comfort. <br> $75.00
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="4BW3NDQ8RDJAJ">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+	      </div>
+      </div>
+	  <div class="card">
+	    <img src="images/mug.png" alt="The Cat Hair Mug"> 
+	    <div class="card-content">
+	      <h2 class="card-title">The Cat Hair <br> Mug, 11oz</h2>
+	      <p class="card-body">
+	         Features Handwritten block lettering that says, “There’s Probably Cat Hair In Here” paired with an illustration of a shedding kitty.  <br> $16.99
+	        </p>
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="9P7M57F2DQ8EW">
+			<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">	
+			<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+	      </div>
+	    </div>
+    </div>
+	<!-- END HOME/DECOR -->
+	
+<!-- BEGIN DIGITAL-->
+	<h1>digital content</h1>
+	<div class="flex-products">
+	  <div class="card">
+	    <img src="images/subscription1.png" alt="modern cat magazine cover"> 
+	    <div class="card-content">
+	      <h2 class="card-title">Modern Cat Digital <br> Magazine Subscription</h2>
+	      <p class="card-body">
+	        Insight into feline behaviour. Award-winning stories. Activities cats love. Wellness. Photo contests. It s all in Modern Cat, the best cat magazine. Modern Cat is a must-read!
+	        </p>
+			<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="DX4UUEYX5PX3C">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Subscription Type">Subscription Type</td></tr><tr><td><select name="os0">
+					<option value="Annual subscription">Annual subscription : $14.99 USD - yearly</option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				
+
+	      </div>
+      </div>
+	  
+	  <div class="card">
+	    <img src="images/podcast1.png" alt="19 Cats and Counting Podcast cover"> 
+	    <div class="card-content">
+	      <h2 class="card-title">19 Cats and Counting</h2>
+	      <p class="card-body">
+	        Certified Cat Behaviorists Linda Hall and Rita Reimers of The Cat Behavior Alliance share remedies the challenges that come with owning a cat. Rita is mom to 19 rescue cats and Linda to 11 rescue cats (and 1 rescuee dog!). 
+	        </p>
+
+			<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="2DY4594E7Y8KJ">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Subscription Type">Subscription Type</td></tr><tr><td><select name="os0">
+					<option value="Monthly Subscription">Monthly Subscription : $2.99 USD - monthly</option>
+					<option value="Annual Subscription">Annual Subscription : $11.99 USD - yearly</option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				
+			
+	
+</div>
+<!-- END DIGITAL -->
+
+<footer>
+	<div class="flex-logos">
+	 <div class="social">
+   	<a href="https://www.facebook.com/meowingtonsInc"><img src="images/fb-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://www.instagram.com/meowingtonsco/"><img src="images/insta-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://twitter.com/meowingtons__"><img src="images/twitter-logo.png" alt="white twitter logo"/> </a>
+	</div>
+	</div> <!-- END FLEX-LOGOS --> 
+	<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Cats&amp;Co</p>
+	<p><a href="#">Contact</a> | <a href="#">Shipping</a> | <a href="#">Returns</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+	  
+</footer>
+	
+</div>
+	<!-- END CONTAINER DIV -->
+
+</body>
+</html>

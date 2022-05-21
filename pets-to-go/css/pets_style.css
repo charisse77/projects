@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* Pets To Go*/
+
+.container {
+        border: 4px solid black;
+        background-color: white;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 30px;
+    }
+    
+    body { 
+        background-color: lavenderblush;
+        
+    }
+    
+    .bg-primary {
+        background-color: #66b3ff;
+    }
+    
+    .sand {
+        background-color: #f6d7b0;
+    }
+    
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        
+    }
+    
+    footer {
+        color: white;
+        text-align: center;
+        padding: 0.5em;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        
+    }
+    
+    .bg-image {
+        position: relative;}
+
+    .bg-image img {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: #ace6ff;
+        text-align: center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-image: url("../images/banner.jpg");
+        width:100%;
+        height:100%;
+        height:calc(100% - 1px);
+        background-size: cover;
+
+    }
+    
+    nav {
+        padding: 0.5em;
+        margin-top: -16px;
+       
+    }
+    
+    nav a {
+        color: white;
+    }
+
+    .navbar-nav > li {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+    
+    .navbar ul li a {
+    color: white;}
+    
+    .navbar ul li a:hover {
+    color: #C0BFBF;
+    text-decoration: none;}
+    
+    footer a { 
+        text-decoration: none;
+        color: white;
+        }
+    
+    footer a:hover {
+        text-decoration: none;
+        color: #C0BFBF;
+    }
+
+    section {
+        padding: 0.5em;
+        margin: 0.5em;
+        
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+a:hover {
+    text-decoration: none;
+      color: #C0BFBF;
+}
+    .aboutlist {
+    list-style: none;
+    padding: 0.5em;
+}
+
+    .listspacing {
+    margin-bottom: 0.5em;
+}
+
+.imgpadding {
+    margin: 0.5em;
+    padding: 0.5em;
+    
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 0.5em;        
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: rebeccapurple;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-text {
+    text-overflow: clip;
+    white-space: inherit;
+    overflow: scroll;
+}
+
+.bluecolor {background-color:#B6D8F2;}
+
+img {
+    border: 1px solid black;
+    background-color: white;
+}

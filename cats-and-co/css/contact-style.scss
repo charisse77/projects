@@ -1,0 +1,193 @@
+//Web Applications Portfolio//
+
+$purple: #7D5BA6;
+$cherry: #FC6471;
+$green: #9CFFD9; 
+$offWhite: #FFFAFF; 
+$offBlack: #1E1B18; 
+$buttons: #FC6471; 
+$btnHover: #9CFFD9; 
+$content: 'Roboto', sans-serif;
+$heading: 'Lora', sans-serif;
+
+@mixin flex-galleries {
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	background: $offWhite;
+}
+
+#container {
+	background-color: $offWhite;
+	display: flex; 
+	flex-direction: column;
+	height: 100vh;
+}
+
+#form-container{
+	margin: auto;
+	width: 30%; 
+	color: $offBlack;
+}
+
+//FORM STYLING//
+.flex-item {
+	display: flex; 
+	justify-content: flex-end;
+	padding: 0.5em;
+}
+
+.flex-item > label {
+	padding: 0.5em 1em .5em 0; 
+	flex: 1; 
+	font-weight: bold; 
+}
+
+.flex-item > input[type="text"], textarea,select, input[type="email"] {
+	flex: 5;  
+	border-radius: 25px;
+	padding: 1.0em;
+	border: thin solid black; 
+	opacity: 0.9; 
+	background: white; 
+	
+}
+//END FORM STYLING//
+
+//FORM BUTTONS//
+input[type="submit"], input[type="reset"] {
+	padding: 0.5em 1.5em;
+	border-radius: 25px; 
+	color: white;
+	background: black; 
+	font-weight: bold; 
+}
+
+
+
+/*input[type="submit"]:hover, input[type="reset"]:hover {
+	color: black;
+	background: $offWhite; 
+	cursor: pointer;
+}*/
+
+/*.button {
+	//margin-top: 0; 
+	//position: absolute;
+	-ms-transform: translateX(20%);
+	transform: translateX(20%);
+}*/
+
+//END FORM BUTTONS//
+
+
+//FOOTER//
+.flex-logos{
+	@include flex-galleries;
+}
+
+.flex-logos img{
+	margin: 1.0em 0.5em;
+}
+
+footer{
+	background-color: $offBlack;
+	padding: 1.0em;
+	font-family: $content;
+}
+footer p {
+	color: $offWhite; 
+	text-align: center;
+	font-size: 0.8rem; 
+}
+
+//END FOOTER//
+
+//BEGIN NAV//
+
+nav {
+	font-size: 1.5rem;
+	font-family: $content;
+	background: $offBlack;
+	height: 7vh;
+	padding: 1.0em;
+	color: white;
+	position: relative;
+	z-index: 2;
+	width:100%;
+	
+	li {
+		display: inline;
+		text-decoration: none;
+		margin-left: 1.0em;
+	}
+	li a {
+		color: white; 
+		text-decoration: none; 
+	}
+	
+	li a:link, a:visited {
+		color: white; 
+	}
+	
+}
+//END NAV//
+
+//LINKS//
+a:link, a:visited{
+	color:white;
+	text-decoration:none;
+}
+
+a:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+//END LINKS//
+
+
+//BEGIN MEDIA QUEIRES//
+@media only screen and (max-width: 600px) {
+	#form-container{
+	margin: auto;
+	width: 80vw; 
+}
+	
+	nav li a{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		//margin: 0.5em; 
+	}
+	
+	.flex-item > input[type="text"], textarea,select, input[type="email"] {
+	flex: 3;  
+	padding: 1.0em;
+	margin: 0; 
+
+	
+}
+	
+	.button {
+	//margin-top: 0; 
+	//position: absolute;
+	-ms-transform: translateX(10%);
+	transform: translateX(10%);
+}
+	
+	
+}
+//BEGIN MEDIA QUEIRES//
+// Scss Document
+

@@ -73,64 +73,27 @@
     
     <h2 class="text-center">Current Open Positions</h2>
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide align-self-center" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <div class="d-flex justify-content-center p-5">
-<div class="card" style="width: 18rem;">
+    <div class="card mx-auto mt-4" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Home Service Technician  (Apprentice)</h5>
-    <p class="card-text my-3">Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo.</p>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <a href="#" class="btn btn-primary">CONTACT US</a>
-    </div>
+    <h5 class="card-title">Home Service Specialist I</h5>
+    <p class="card-text"> This entry level position is perfect for anyone 18 years or older with professional or personal handy man experience. We will train the person who best meets our qualifications!  
+    <br>
+    <strong>Requirements:</strong>  
+    
+    <ul>
+      <li>Customer oriented </li>
+      <li>Social with teammates </li>
+      <li>1 year of personal or professional handyman experience </li>
+      <li>Ethical</li>
+      <li>Strong communication skills</li>
+      <li>Self driven</li>
+      <li>Willing and able to work independently</li>
+      <li>Fast decision maker</li>
+    </ul>
+    </p>
   </div>
 </div>
-</div> 
 
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <div class="d-flex justify-content-center p-5">
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Electrician (Apprentice)</h5>
-    <p class="card-text my-3">Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo.</p>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <a href="#" class="btn btn-primary">CONTACT US</a>
-    </div>
-  </div>
-</div>
-</div> 
-    </div>
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center p-5">
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Painter</h5>
-    <p class="card-text my-3">Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo.</p>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <a href="#" class="btn btn-primary">CONTACT US</a>
-    </div>
-  </div>
-</div>
-</div> 
-      
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
     
 </div> <!--close row div-->

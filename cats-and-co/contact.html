@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cats&amp;co | online cat store</title>
+<!-- EXTERNAL SHEETS -->
+<link href="css/wdv351-style.css" rel="stylesheet" type="text/css">
+<!-- END EXTERNAL SHEETS -->
+	
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet"> 
+<!-- END FONT -->
+	
+<!--RECAPTCHA-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--RECAPTCHA-->
+	
+<style>
+	 #contact_form p:nth-child(4){
+			position: absolute;
+			top:-7000px;
+			z-index: -1;
+        } 
+		
+</style>	
+</head>
+
+<body>
+<div id="container">
+<nav>
+	<ul>
+  <strong><li><a href ="index.html">Cats&amp;Co</a></li></strong>
+  	 <li><a href ="about.html">about</a></li>
+      <li><a href ="shop.html"> shop </a></li>
+      <li><a href="contact.html">connect</a></li>
+	</ul>
+</nav>
+<h1>contact us</h1>
+<!-- FORM CONTAINER -->
+	<div id="form-container"> 
+	<form id="contact_form" name="contact_form" method="post" action="formHandler.php">
+	 
+
+<p class="flex-item"> <!-- contact name --> 
+			<label for="contact_name">name</label>
+			<input type="text" name="contact_name" id="contact_name"/>
+		
+		</p> 
+		
+		<p class="flex-item"> <!-- contact email -->
+			<label for="email_address">email</label>
+			<input type="email" name="email_address" id="email_address" placeholder="email@mail.com"/>
+		
+		</p>
+		
+		<p class="flex-item"> <!-- contact subject -->
+			<label for="subject">subject</label>
+			<input type="text" name="subject" id="subject"/>
+		
+		</p>  
+		
+		<p class="flex-item"> <!-- dropdown --> 
+			<label for="contact_reason">reason for contact</label>
+			<select name="contact_reason" id="contact_reason">
+				<option value="">choose an option</option>
+				<option value="general-inquiry">general inquiry</option>
+				<option value="resume">see my resume</option>
+				<option value="business-inquiry">business inquiry</option>
+			</select>
+		
+		</p>  
+		
+		<p class="flex-item"> <!-- comments  --> 
+		<label for="message">message</label>
+		<textarea name="message" rows="10" cols="10" placeholder="type a message..."></textarea>
+		</p> 
+
+		<div class="center">
+		<!-- RECAPTCHA V2 -->  
+<div class="g-recaptcha" data-sitekey="6Le9UnUdAAAAAIMWMSy6avFNXuofEHY9zwWZUMIM" data-callback="recaptcha_callback"></div>
+<!-- END RECAPTCHA V2 -->	
+   
+
+		<p class="button"> 
+			<input type="submit" name="submit" id="submit" value="Submit" disabled style="cursor: not-allowed;"/>
+      	    <input type="reset" name="reset" id="reset" value="Reset"/>
+		</p>	
+		</div>
+
+
+
+
+</form>
+</div> 
+<script>
+
+function recaptcha_callback(){
+    let submitBtn = document.querySelector("#submit");
+    submitBtn.removeAttribute('disabled');
+    submitBtn.style.cursor = 'pointer';
+}
+
+</script>
+<!-- END FORM CONTAINER -->
+    
+
+<footer>
+	<div class="flex-logos">
+	 <div class="social">
+   	<a href="https://www.facebook.com/meowingtonsInc"><img src="images/fb-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://www.instagram.com/meowingtonsco/"><img src="images/insta-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://twitter.com/meowingtons__"><img src="images/twitter-logo.png" alt="white twitter logo"/> </a>
+	</div>
+	</div>
+<!-- END FLEX-LOGOS --> 
+	<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Cats&amp;Co</p>
+	<p><a href="#">Contact</a> | <a href="#">Shipping</a> | <a href="#">Returns</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+	  
+</footer>
+	
+	
+</div>	<!-- END CONTAINER DIV -->
+
+</body>
+</html>

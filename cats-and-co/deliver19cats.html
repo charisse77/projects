@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cats&amp;co | online cat store</title>
+<!-- EXTERNAL SHEETS -->
+<link href="css/wdv351-style.css" rel="stylesheet" type="text/css">
+<!-- END EXTERNAL SHEETS -->
+	
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet"> 
+<!-- END FONT --> 
+
+<script> 
+
+	// On Digital Goods delivery page
+	
+	//if window.locaton.href.indexOf('?token=') > 0 then set 'validSale' cookie
+		//if validSale cookie is set then 
+			//display prod page
+		//else redirect to home page 
+		
+	// function setPurchaseCookie(){
+	// if(window.location.href.indexOf("?token=") > 0){let date = new Date();
+	// 	let days=200000;
+	// 	date.setTime(date.getTime() + (days*24*60*60*1000));
+	// 	let expires = 'expires=' + date.toUTCString();
+	// 	document.cookie = "saleIsValid=true; expires="+ expires + ";"
+	// 	//alert("Cookie Created"+document.cookie)
+	// }else{
+	// 	location.href = 'http://hellocharisse.com/WDV351%20Web%20Apps/Portfolio%20Project/shop.html';
+	// }
+
+	// }//END SETCOOKIE
+
+
+	// function getPurchaseCookie(){
+	// 	let cookie = document.cookie;
+	// 	if(cookie != "saleIsValid=true"){
+	// 		location.href = 'http://hellocharisse.com/WDV351%20Web%20Apps/Portfolio%20Project/shop.html';
+	// 	}
+	// }//END GETCOOKIE
+	
+	
+	// setPurchaseCookie()
+	// getPurchaseCookie()
+</script>
+
+<script>
+ function downloadFile(){
+	 let aElement = document.createElement('a');
+	 aElement.setAttribute('href','downloads/sample-mag.pdf');
+	 aElement.setAttribute('download', 'downloads/sample-mag.pdf');
+	 aElement.setAttribute('target', '_blank');
+	 aElement.style.display = 'none';
+	 document.body.appendChild(aElement);
+	 aElement.click();
+	 document.body.removeChild(aElement);
+	 
+	 let aElement2 = document.createElement('a');
+	 aElement2.setAttribute('href','downloads/sample-mag.jpg');
+	 aElement2.setAttribute('download', 'downloads/sample-mag.jpg');
+	 aElement2.setAttribute('target', '_blank');
+	 aElement2.style.display = 'none';
+	 document.body.appendChild(aElement2);
+	 aElement2.click();
+	 document.body.removeChild(aElement2);
+ }	
+	
+</script>
+	
+	
+</head>
+
+<body onLoad="downloadFile()">
+<div id="container">
+<nav>
+	<ul>
+		<strong><li><a href ="index.html">Cats&amp;Co</a></li></strong>
+			 <li><a href ="about.html">about</a></li>
+			<li><a href ="shop.html"> shop </a></li>
+			<li><a href="contact.html">connect</a></li>
+		  </ul>
+</nav>
+	
+<div id="delivery" style="text-align: center; color: black; font-family: Lora, sans-serif;">
+  <h1>Purchase Successful</h1>
+  <h1>Thank you for your support!</h1>
+<div class="card" >
+   <img src="images/podcast1.png" alt="I Could Pee on This book cover"/> 
+</div>
+	<h1>DOWNLOAD LINKS</h1>
+	<p ><a href="downloads/sample-mag.pdf" download="sampleDoc" style="text-decoration: underline; color: black; font-size: 1.5rem;">Download Podcast Schedule PDF</a>
+	<br>
+	<a href="downloads/sample-mag.jpg" download="sampleDoc" style="text-decoration: underline; color: black; font-size: 1.5rem; ">Download Podcast Schedule JPG</a>
+	<br>
+	<a href="https://www.petliferadio.com/19catsandcounting.html" download="sampleDoc" style="text-decoration: underline; color: black; font-size: 1.5rem; ">Listen To Podcast</a>
+	</p>
+
+</div>
+
+<section class="unsubscribe">
+	<p>Bookmark this page or contact support to unsubscribe anytime!</p>
+	<A HREF="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=QDKDXHH56ZNLJ">
+		<IMG SRC="https://www.sandbox.paypal.com/en_US/i/btn/btn_unsubscribe_LG.gif" BORDER="0">
+		</A>
+
+</section>
+
+<footer>
+	<div class="flex-logos">
+ <div class="social">
+   	<a href="https://www.facebook.com/meowingtonsInc"><img src="images/fb-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://www.instagram.com/meowingtonsco/"><img src="images/insta-logo1.png" alt="white facebook logo"/> </a>
+	</div>
+	<div class="social">
+   	<a href="https://twitter.com/meowingtons__"><img src="images/twitter-logo.png" alt="white twitter logo"/> </a>
+	</div>
+	</div>
+<!-- END FLEX-LOGOS --> 
+	<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Cats&amp;Co</p>
+	<p><a href="#">Contact</a> | <a href="#">Shipping</a> | <a href="#">Returns</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+	  
+</footer>
+	
+	
+</div>	<!-- END CONTAINER DIV -->
+
+</body>
+</html>
