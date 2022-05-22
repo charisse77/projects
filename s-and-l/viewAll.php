@@ -96,7 +96,7 @@ function callDelete(self){
 		<input type="text" name="id"> -->
 
 
- <table class="table">
+ <table class="table m-3">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>

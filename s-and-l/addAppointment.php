@@ -138,9 +138,7 @@ div:nth-child(6){
    <h1 class="text-center pt-3">
       Appointment Confirmation
    </h1>
-    <h3 class="py-5">
-      The appointment has been submitted to the database. The appointment details are as follows. 
-    </h3>
+    <h3 class="py-5">The appointment has been submitted! </h3>
       <p>Client Name: <?php echo $firstName . " " . $lastName ?> </p>
       <p>Client Phone Number: <?php echo $phoneNum ?> </p>
       <p>Email: <?php echo $emailAddress ?> </p>
