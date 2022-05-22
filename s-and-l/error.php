@@ -41,18 +41,20 @@
         </div>
 
 <footer>
-    <div class="text-center p-5">
-        <p>S &amp; L Home Services</p>
-        <p>About | Services | Careeres | Contact Us</p>
-        <p>Hours: Monday - Friday 8am to 6pm</p>
-        <p>515-555-5555</p>
-        <p>contact@sandl.com</p>
-        <a href="login.php">Administrative Portal</a>
-    </div>
-    <div class="text-center p-4">
-        <p> &copy; <?php echo date("Y") . " "; ?>Copyright S &amp; L Home Services</p>
-    </div>
+<div class="p-3 text-center" style="font-weight:lighter;" >
+<p class="m-0">S &amp; L Home Services</p>
+<p class="m-0">About | Services | Careeres | Contact Us </p>
+<p class="m-0">Hours: Monday - Friday 8am to 6pm</p>
+<p class="m-0">515-555-5555</p>
+<p class="m-0">contact@sandl.com</p>
+</div>
+  <div class="text-center p-4">
+   <p> &copy; <?php echo date("Y") . " "; ?>Copyright
+    S &amp; L Home Services</p>
+    <a href="login.php" style="color:black; text-decoration:none; font-weight:lighter " class="admin">Administrative Portal</a>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

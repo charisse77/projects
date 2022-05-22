@@ -10,8 +10,6 @@ else{
 
 include 'dbConnect.php';
  
-
-
 try{
     $sql = "SELECT * FROM add_appointment";
     $stmt = $conn->prepare($sql); //prepare the statement
@@ -96,10 +94,9 @@ function callDelete(self){
 		<input type="text" name="id"> -->
 
 
- <table class="table m-3">
+ <table class="table mb-5">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">#</th>
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Middle</th>
@@ -118,7 +115,6 @@ function callDelete(self){
  
 ?>  
     <tr id="info">
-      <th scope="row"><?php echo $row['id']; ?></th>
       <td><?php echo $row['first_name']; ?></td>
       <td><?php echo $row['last_name']; ?></td>
       <td><?php echo $row['middle_name']; ?></td>
@@ -149,17 +145,17 @@ function callDelete(self){
 </main>
     
 <footer>
-<div class="text-center p-5">
-<p>S &amp; L Home Services</p>
-<p>About | Services | Careeres | Contact Us</p>
-<p>Hours: Monday - Friday 8am to 6pm</p>
-    <p>515-555-5555</p>
-    <p>contact@sandl.com</p>
-    <a href="login.php">Administrative Portal</a>
+<div class="p-3 text-center" style="font-weight:lighter;" >
+<p class="m-0">S &amp; L Home Services</p>
+<p class="m-0">About | Services | Careeres | Contact Us </p>
+<p class="m-0">Hours: Monday - Friday 8am to 6pm</p>
+<p class="m-0">515-555-5555</p>
+<p class="m-0">contact@sandl.com</p>
 </div>
   <div class="text-center p-4">
    <p> &copy; <?php echo date("Y") . " "; ?>Copyright
     S &amp; L Home Services</p>
+    <a href="login.php" style="color:black; text-decoration:none; font-weight:lighter " class="admin">Administrative Portal</a>
   </div>
 </footer>
 

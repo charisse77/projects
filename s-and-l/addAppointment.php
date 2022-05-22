@@ -1,18 +1,8 @@
 <?php
 session_start();
 
-  $firstName = $_POST['first_name'];
-  $lastName = $_POST['last_name'];
-  $middleName = $_POST['middle_name'];
-  $emailAddress = $_POST['email'];
-  $phoneNum = $_POST['phone'];
-  $honeyPot = $_POST['estimate_file'];
-  $apptType = $_POST['appointment_type'];
-  $apptNotes = $_POST['appointment_notes'];
-
-  $goodInsert = false; 
-  $error = "";
-
+$goodInsert = false; 
+$error = "";
 
 if(isset($_SESSION['validUser']) && $_SESSION['validUser']){
 	//allow access
@@ -32,6 +22,17 @@ else{
       //HONEY POT//    
 
   try{
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
+    $middleName = $_POST['middle_name'];
+    $emailAddress = $_POST['email'];
+    $phoneNum = $_POST['phone'];
+    $honeyPot = $_POST['estimate_file'];
+    $apptType = $_POST['appointment_type'];
+    $apptNotes = $_POST['appointment_notes'];
+  
+
+  
     require "dbConnect.php";
     $sql = "INSERT INTO add_appointment (first_name, last_name, middle_name, email, phone_number, appointment_type, appointment_notes) VALUES (:firstName, :lastName, :middleName, :email, :phoneNumber, :appointmentType, :appointmentNotes)";
     $stmt = $conn->prepare($sql);
@@ -235,19 +236,20 @@ div:nth-child(6){
 </main>
     
 <footer>
-<div class="text-center p-5">
-<p>S &amp; L Home Services</p>
-<p>About | Services | Careeres | Contact Us</p>
-<p>Hours: Monday - Friday 8am to 6pm</p>
-    <p>515-555-5555</p>
-    <p>contact@sandl.com</p>
-    <a href="login.php">Administrative Portal</a>
+<div class="p-3 text-center" style="font-weight:lighter;" >
+<p class="m-0">S &amp; L Home Services</p>
+<p class="m-0">About | Services | Careeres | Contact Us </p>
+<p class="m-0">Hours: Monday - Friday 8am to 6pm</p>
+<p class="m-0">515-555-5555</p>
+<p class="m-0">contact@sandl.com</p>
 </div>
   <div class="text-center p-4">
    <p> &copy; <?php echo date("Y") . " "; ?>Copyright
     S &amp; L Home Services</p>
+    <a href="login.php" style="color:black; text-decoration:none; font-weight:lighter " class="admin">Administrative Portal</a>
   </div>
 </footer>
+
 
 
 </div> <!--close container div-->
